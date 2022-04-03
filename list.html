@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin site</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="container">
+      <a href="list.html" class="brand-name">panda</a>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="pages-navbar">
+      <h3 class="navbar-title">
+        <i class="fa-solid fa-house"></i>Dashboard
+      </h3>
+      <ul class="navbar-list">
+        <li class="navbar-item"><a href="list.html">
+            <i class="fa-solid fa-bars"></i>Product List
+          </a></li>
+        <li class="navbar-item"><a href="change.html">
+            <i class="fa-solid fa-pencil"></i>Product Change
+          </a></li>
+        <li class="navbar-item"><a href="setting.html">
+            <i class="fa-solid fa-info"></i>Product Setting
+          </a></li>
+      </ul>
+    </section>
+    <section class="product-list">
+      <form class="search-item">
+        <input class="input-search" type="text" id="search-bar" placeholder="Search product name...">
+        <label for="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </label>
+      </form>
+      <h2 class="list-title">product list</h2>
+      <table>
+        <thead>
+          <tr>
+            <td>ID</td>
+            <td>image</td>
+            <td>name</td>
+            <td>category</td>
+            <td>quantity</td>
+            <td>price</td>
+            <td>Actions</td>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </section>
+  </main>
+  <script src="list.js"></script>
+</body>
+
+</html>
